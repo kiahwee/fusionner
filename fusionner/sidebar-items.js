@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["git",""],["merger",""]],"struct":[["RepositoryConfiguration","Configuration struct for the repository"],["WatchReferences","\"Compiled\" watch reference"]]});

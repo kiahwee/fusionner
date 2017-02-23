@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Remote` struct in crate `fusionner`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Remote">
+
+    <title>fusionner::git::Remote - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>fusionner</a>::<wbr><a href='index.html'>git</a></p><script>window.sidebarCurrent = {name: 'Remote', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>fusionner</a>::<wbr><a href='index.html'>git</a>::<wbr><a class='struct' href=''>Remote</a></span><span class='out-of-band'><span id='render-detail'>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a class='srclink' href='../../src/fusionner/git.rs.html#14-17' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Remote&lt;'repo&gt; {
+    pub remote: <a class='struct' href='https://docs.rs/git2/0.6/git2/remote/struct.Remote.html' title='git2::remote::Remote'>Remote</a>&lt;'repo&gt;,
+    // some fields omitted
+}</pre><h2 class='fields'>Fields</h2><span id='structfield.remote' class='structfield'>
+                           <span id='remote.v' class='invisible'>
+                           <code>remote: <a class='struct' href='https://docs.rs/git2/0.6/git2/remote/struct.Remote.html' title='git2::remote::Remote'>Remote</a>&lt;'repo&gt;</code>
+                           </span></span><span class='stab '></span><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl&lt;'repo&gt; <a class='struct' href='../../fusionner/git/struct.Remote.html' title='fusionner::git::Remote'>Remote</a>&lt;'repo&gt;</code></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/fusionner/git.rs.html#184-351' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.disconnect' class='method'><span id='disconnect.v' class='invisible'><code>fn <a href='#method.disconnect' class='fnname'>disconnect</a>(&amp;mut self)</code></span></h4>
+<h4 id='method.name' class='method'><span id='name.v' class='invisible'><code>fn <a href='#method.name' class='fnname'>name</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;</code></span></h4>
+<h4 id='method.refspecs' class='method'><span id='refspecs.v' class='invisible'><code>fn <a href='#method.refspecs' class='fnname'>refspecs</a>(&amp;self) -&gt; <a class='struct' href='https://docs.rs/git2/0.6/git2/remote/struct.Refspecs.html' title='git2::remote::Refspecs'>Refspecs</a></code></span></h4>
+<h4 id='method.remote_ls' class='method'><span id='remote_ls.v' class='invisible'><code>fn <a href='#method.remote_ls' class='fnname'>remote_ls</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;<a class='struct' href='../../fusionner/git/struct.RemoteHead.html' title='fusionner::git::RemoteHead'>RemoteHead</a>&gt;, <a class='struct' href='https://docs.rs/git2/0.6/git2/error/struct.Error.html' title='git2::error::Error'>Error</a>&gt;</code></span></h4>
+<h4 id='method.head' class='method'><span id='head.v' class='invisible'><code>fn <a href='#method.head' class='fnname'>head</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;, <a class='struct' href='https://docs.rs/git2/0.6/git2/error/struct.Error.html' title='git2::error::Error'>Error</a>&gt;</code></span></h4>
+<h4 id='method.resolve_head' class='method'><span id='resolve_head.v' class='invisible'><code>fn <a href='#method.resolve_head' class='fnname'>resolve_head</a>(heads: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a><a class='struct' href='https://docs.rs/git2/0.6/git2/remote/struct.RemoteHead.html' title='git2::remote::RemoteHead'>RemoteHead</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></span></h4>
+<h4 id='method.fetch' class='method'><span id='fetch.v' class='invisible'><code>fn <a href='#method.fetch' class='fnname'>fetch</a>(&amp;mut self, refspecs: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a>&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://docs.rs/git2/0.6/git2/error/struct.Error.html' title='git2::error::Error'>Error</a>&gt;</code></span></h4>
+<h4 id='method.push' class='method'><span id='push.v' class='invisible'><code>fn <a href='#method.push' class='fnname'>push</a>(&amp;mut self, refspecs: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a>&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://docs.rs/git2/0.6/git2/error/struct.Error.html' title='git2::error::Error'>Error</a>&gt;</code></span></h4>
+<h4 id='method.generate_refspec' class='method'><span id='generate_refspec.v' class='invisible'><code>fn <a href='#method.generate_refspec' class='fnname'>generate_refspec</a>(&amp;self, src: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, force: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></span></h4>
+<div class='docblock'><p>For a given local reference, generate a refspec for the remote with the same path on remote
+i.e. refs/pulls/*  --&gt; refs/pulls/*:refs/remotes/origin/pulls/*</p>
+</div><h4 id='method.add_refspec' class='method'><span id='add_refspec.v' class='invisible'><code>fn <a href='#method.add_refspec' class='fnname'>add_refspec</a>(&amp;self, refspec: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, direction: <a class='enum' href='https://docs.rs/git2/0.6/git2/enum.Direction.html' title='git2::Direction'>Direction</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://docs.rs/git2/0.6/git2/error/struct.Error.html' title='git2::error::Error'>Error</a>&gt;</code></span></h4>
+<h4 id='method.add_refspecs' class='method'><span id='add_refspecs.v' class='invisible'><code>fn <a href='#method.add_refspecs' class='fnname'>add_refspecs</a>(&amp;self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; refspecs: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a>&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; direction: <a class='enum' href='https://docs.rs/git2/0.6/git2/enum.Direction.html' title='git2::Direction'>Direction</a>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://docs.rs/git2/0.6/git2/error/struct.Error.html' title='git2::error::Error'>Error</a>&gt;</code></span></h4>
+<h4 id='method.resolve_target_ref' class='method'><span id='resolve_target_ref.v' class='invisible'><code>fn <a href='#method.resolve_target_ref' class='fnname'>resolve_target_ref</a>(&amp;mut self,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; target_ref: <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;&amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, <a class='struct' href='https://docs.rs/git2/0.6/git2/error/struct.Error.html' title='git2::error::Error'>Error</a>&gt;</code></span></h4>
+<h4 id='method.find_matching_refspec' class='method'><span id='find_matching_refspec.v' class='invisible'><code>fn <a href='#method.find_matching_refspec' class='fnname'>find_matching_refspec</a>&lt;'a&gt;(refspecs: <a class='struct' href='https://docs.rs/git2/0.6/git2/remote/struct.Refspecs.html' title='git2::remote::Refspecs'>Refspecs</a>&lt;'a&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; direction: <a class='enum' href='https://docs.rs/git2/0.6/git2/enum.Direction.html' title='git2::Direction'>Direction</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; refspec: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://docs.rs/git2/0.6/git2/refspec/struct.Refspec.html' title='git2::refspec::Refspec'>Refspec</a>&lt;'a&gt;&gt;</code></span></h4>
+<h4 id='method.direction_eq' class='method'><span id='direction_eq.v' class='invisible'><code>fn <a href='#method.direction_eq' class='fnname'>direction_eq</a>(left: &amp;<a class='enum' href='https://docs.rs/git2/0.6/git2/enum.Direction.html' title='git2::Direction'>Direction</a>, right: &amp;<a class='enum' href='https://docs.rs/git2/0.6/git2/enum.Direction.html' title='git2::Direction'>Direction</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></span></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                    <dt>+</dt>
+                    <dd>Collapse/expand all sections</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "fusionner";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
